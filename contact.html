@@ -22,6 +22,12 @@
             <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="stakeholders.html">Stakeholders</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link active" href="contact.html">Contact</a>
           </li>
         </ul>
@@ -31,18 +37,18 @@
     <!-- Contact Form -->
     <div class="container mt-5">
       <h1>Contact Us</h1>
-      <form>
+      <form action="submit_form.php" method="post">
         <div class="mb-3">
           <label for="name" class="form-label">Name</label>
-          <input type="text" class="form-control" id="name" placeholder="Your Name">
+          <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
         </div>
         <div class="mb-3">
           <label for="email" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="email" placeholder="name@example.com">
+          <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
         </div>
         <div class="mb-3">
           <label for="message" class="form-label">Message</label>
-          <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+          <textarea class="form-control" id="message" name="message" rows="3" placeholder="Your Message" required></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>

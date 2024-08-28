@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About - Homework1</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      .collapsible-content {
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
@@ -38,47 +43,47 @@
     <div class="container mt-5">
       <h1>About Us</h1>
 
-      <!-- Dropdown Menu for Content -->
-      <div class="dropdown mt-4">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="aboutDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-          Explore Our Sections
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-          <li><a class="dropdown-item" href="#summary">Summary</a></li>
-          <li><a class="dropdown-item" href="#mission">Mission</a></li>
-          <li><a class="dropdown-item" href="#vision">Vision</a></li>
-          <li><a class="dropdown-item" href="#values">Values</a></li>
-        </ul>
+      <!-- Collapsible Content -->
+      <div class="mt-4">
+        <h2 class="collapsible-content" data-bs-toggle="collapse" data-bs-target="#summaryContent" aria-expanded="true">
+          Summary
+        </h2>
+        <div id="summaryContent" class="collapse show">
+          <p>Our project is dedicated to delivering top-notch solutions tailored to meet the unique needs of our clients. We focus on innovation, efficiency, and creating value through our diverse range of services, ensuring that our clients achieve their business goals effectively.</p>
+        </div>
       </div>
 
-      <!-- Summary Section -->
-      <div class="mt-4" id="summary">
-        <h2>Summary</h2>
-        <p>Our project is dedicated to delivering top-notch solutions tailored to meet the unique needs of our clients. We focus on innovation, efficiency, and creating value through our diverse range of services, ensuring that our clients achieve their business goals effectively.</p>
+      <div class="mt-4">
+        <h2 class="collapsible-content" data-bs-toggle="collapse" data-bs-target="#missionContent" aria-expanded="false">
+          Mission
+        </h2>
+        <div id="missionContent" class="collapse">
+          <p>Our mission is to empower businesses with cutting-edge technology solutions that drive success. We strive to exceed client expectations by delivering high-quality services, fostering long-term partnerships, and contributing to the growth and success of every business we serve.</p>
+        </div>
       </div>
 
-      <!-- Mission Section -->
-      <div class="mt-4" id="mission">
-        <h2>Mission</h2>
-        <p>Our mission is to empower businesses with cutting-edge technology solutions that drive success. We strive to exceed client expectations by delivering high-quality services, fostering long-term partnerships, and contributing to the growth and success of every business we serve.</p>
+      <div class="mt-4">
+        <h2 class="collapsible-content" data-bs-toggle="collapse" data-bs-target="#visionContent" aria-expanded="false">
+          Vision
+        </h2>
+        <div id="visionContent" class="collapse">
+          <p>We envision a world where businesses of all sizes can leverage technology to unlock their full potential. Our goal is to be the go-to partner for businesses seeking to innovate and thrive in the digital age, offering solutions that are not only effective but also sustainable.</p>
+        </div>
       </div>
 
-      <!-- Vision Section -->
-      <div class="mt-4" id="vision">
-        <h2>Vision</h2>
-        <p>We envision a world where businesses of all sizes can leverage technology to unlock their full potential. Our goal is to be the go-to partner for businesses seeking to innovate and thrive in the digital age, offering solutions that are not only effective but also sustainable.</p>
-      </div>
-
-      <!-- Values Section -->
-      <div class="mt-4" id="values">
-        <h2>Values</h2>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item"><strong>Integrity:</strong> We uphold the highest standards of integrity in all of our actions.</li>
-          <li class="list-group-item"><strong>Innovation:</strong> We continuously seek new and better ways to serve our clients and improve our services.</li>
-          <li class="list-group-item"><strong>Client Focus:</strong> We are deeply committed to meeting the needs of our clients and ensuring their satisfaction.</li>
-          <li class="list-group-item"><strong>Collaboration:</strong> We work together, across boundaries, to meet the needs of our customers and help the company win.</li>
-          <li class="list-group-item"><strong>Excellence:</strong> We strive to deliver the highest quality and value possible through simple, easy, and relevant solutions.</li>
-        </ul>
+      <div class="mt-4">
+        <h2 class="collapsible-content" data-bs-toggle="collapse" data-bs-target="#valuesContent" aria-expanded="false">
+          Values
+        </h2>
+        <div id="valuesContent" class="collapse">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>Integrity:</strong> We uphold the highest standards of integrity in all of our actions.</li>
+            <li class="list-group-item"><strong>Innovation:</strong> We continuously seek new and better ways to serve our clients and improve our services.</li>
+            <li class="list-group-item"><strong>Client Focus:</strong> We are deeply committed to meeting the needs of our clients and ensuring their satisfaction.</li>
+            <li class="list-group-item"><strong>Collaboration:</strong> We work together, across boundaries, to meet the needs of our customers and help the company win.</li>
+            <li class="list-group-item"><strong>Excellence:</strong> We strive to deliver the highest quality and value possible through simple, easy, and relevant solutions.</li>
+          </ul>
+        </div>
       </div>
     </div>
 

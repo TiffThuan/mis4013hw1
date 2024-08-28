@@ -18,16 +18,8 @@
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              About
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#summary">Summary</a></li>
-              <li><a class="dropdown-item" href="#mission">Mission</a></li>
-              <li><a class="dropdown-item" href="#vision">Vision</a></li>
-              <li><a class="dropdown-item" href="#values">Values</a></li>
-            </ul>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="services.html">Services</a>
@@ -45,6 +37,19 @@
     <!-- About Section -->
     <div class="container mt-5">
       <h1>About Us</h1>
+
+      <!-- Dropdown Menu for Content -->
+      <div class="dropdown mt-4">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="aboutDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          Explore Our Sections
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+          <li><a class="dropdown-item" href="#summary">Summary</a></li>
+          <li><a class="dropdown-item" href="#mission">Mission</a></li>
+          <li><a class="dropdown-item" href="#vision">Vision</a></li>
+          <li><a class="dropdown-item" href="#values">Values</a></li>
+        </ul>
+      </div>
 
       <!-- Summary Section -->
       <div class="mt-4" id="summary">

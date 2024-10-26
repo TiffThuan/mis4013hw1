@@ -14,8 +14,8 @@
 
     <script>
     function autoFill() {
-        document.getElementById("stakeholderName").value = "John Doe";
-        document.getElementById("stakeholderEmail").value = "johndoe@example.com";
+        document.getElementById("stakeholderName").value = "Tiffany";
+        document.getElementById("stakeholderEmail").value = "tiffthuan@email.com";
     }
     </script>
     <button onclick="window.location.href='index.php'">Back to Home</button>

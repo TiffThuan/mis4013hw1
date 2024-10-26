@@ -15,5 +15,7 @@
         content.style.display = content.style.display === "none" ? "block" : "none";
     }
     </script>
+        <button onclick="window.location.href='index.php'">Back to Home</button>
+
 </body>
 </html>

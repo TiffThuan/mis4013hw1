@@ -25,5 +25,8 @@
         return true;
     }
     </script>
+
+        <button onclick="window.location.href='index.php'">Back to Home</button>
+
 </body>
 </html>

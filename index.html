@@ -2,37 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework 1</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Home</title>
 </head>
-<body onload="setActiveNavLink()">
-    <!-- Navbar -->
-    <nav>
-        <ul>
-            <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="about.html" class="nav-link">About</a></li>
-            <li><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
-        <!-- Dark Mode Toggle -->
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-    </nav>
-
-    <!-- Content Section -->
-    <main>
-        <h1>Welcome to Homework 1</h1>
-        <p>Your go-to resource for learning JavaScript functions.</p>
-    </main>
+<body>
+    <h1>Welcome to the Home Page</h1>
 
     <!-- Scroll-to-Top Button -->
-    <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">Top</button>
+    <button id="scrollTopBtn" onclick="scrollToTop()" style="display:none;position:fixed;bottom:20px;right:20px;">Top</button>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; <span id="currentYear"></span> Homework1</p>
-    </footer>
-
-    <!-- JavaScript Functions -->
-    <script src="scripts.js"></script>
+    <script>
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+        document.getElementById("scrollTopBtn").style.display = (document.documentElement.scrollTop > 20) ? "block" : "none";
+    }
+    function scrollToTop() {
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
 </body>
 </html>

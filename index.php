@@ -5,6 +5,16 @@
     <title>Home</title>
 </head>
 <body>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.php">Home</a> |
+        <a href="contact.php">Contact</a> |
+        <a href="about.php">About Us</a> |
+        <a href="services.php">Services</a> |
+        <a href="stakeholder.php">Stakeholders</a>
+    </nav>
+    <hr>
+
     <h1>Welcome to the Home Page</h1>
 
     <!-- Scroll-to-Top Button -->
@@ -21,4 +31,3 @@
     </script>
 </body>
 </html>
-

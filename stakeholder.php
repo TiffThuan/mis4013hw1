@@ -17,8 +17,14 @@
         document.getElementById("stakeholderName").value = "Tiffany";
         document.getElementById("stakeholderEmail").value = "tiffthuan@email.com";
     }
+
+    function goBackHome() {
+        alert("Returning to Home page..."); // Display alert message
+    }
     </script>
-    <button onclick="window.location.href='index.php'">Back to Home</button>
+
+    <!-- Back to Home button -->
+    <button onclick="goBackHome()">Back to Home</button>
 
 </body>
 </html>

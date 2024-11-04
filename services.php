@@ -6,16 +6,20 @@
 </head>
 <body>
     <h1>Our Services</h1>
-    <button onclick="toggleContent()">Show More Info</button>
-    <p id="extraContent" style="display:none;">This is additional information about our services.</p>
+
+    <button onclick="showInfo()">Show More Info</button>
+    <p id="extraContent">Click the button to see more information about our services.</p>
+
+    <button onclick="goHome()">Back to Home</button>
 
     <script>
-    function toggleContent() {
-        const content = document.getElementById("extraContent");
-        content.style.display = content.style.display === "none" ? "block" : "none";
-    }
-    </script>
-        <button onclick="window.location.href='index.php'">Back to Home</button>
+        function showInfo() {
+            document.getElementById("extraContent").innerHTML = "This is additional information about our services.";
+        }
 
+        function goHome() {
+            document.getElementById("extraContent").innerHTML = "Returning to home page...";
+        }
+    </script>
 </body>
 </html>

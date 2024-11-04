@@ -24,9 +24,14 @@
         alert("Form submitted!");
         return true;
     }
+
+    function goBackHome() {
+        alert("Returning to Home page..."); // Simple alert instead of redirect
+    }
     </script>
 
-        <button onclick="window.location.href='index.php'">Back to Home</button>
+    <!-- Back to Home button -->
+    <button onclick="goBackHome()">Back to Home</button>
 
 </body>
 </html>

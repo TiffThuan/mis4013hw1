@@ -17,8 +17,8 @@
             document.getElementById("extraContent").innerHTML = "This is additional information about our services.";
         }
 
-        function goHome() {
-            document.getElementById("extraContent").innerHTML = "Returning to home page...";
+        function goBackHome() {
+            window.location.href = "index.php"; // Redirects to the homepage
         }
     </script>
 </body>

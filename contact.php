@@ -26,7 +26,7 @@
     }
 
     function goBackHome() {
-        alert("Returning to Home page..."); // Simple alert instead of redirect
+        window.location.href = "index.html"; // Redirects to the homepage
     }
     </script>
 

@@ -19,7 +19,7 @@
     }
 
     function goBackHome() {
-        window.location.href = "index.html"; // Redirects to the homepage
+        window.location.href = "index.php"; // Redirects to the homepage
     }
     </script>
 

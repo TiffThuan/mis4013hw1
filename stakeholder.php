@@ -19,7 +19,7 @@
     }
 
     function goBackHome() {
-        alert("Returning to Home page..."); // Display alert message
+        window.location.href = "index.html"; // Redirects to the homepage
     }
     </script>
 

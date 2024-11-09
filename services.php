@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Contact Us</title>
+    <title>Services</title>
     <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
 </head>
 <body>
@@ -16,18 +16,18 @@
     </nav>
 
     <!-- Main Content -->
-    <h1>Contact Us</h1>
-    <div id="scatterChart" style="width: 600px; height: 400px;"></div>
+    <h1>Our Services</h1>
+    <div id="lineChart" style="width: 600px; height: 400px;"></div>
 
     <script>
-        const scatterChart = echarts.init(document.getElementById('scatterChart'));
-        const scatterOption = {
-            title: { text: 'Customer Feedback Trends' },
-            xAxis: { type: 'category', data: ['Timeliness', 'Satisfaction', 'Clarity'] },
+        const lineChart = echarts.init(document.getElementById('lineChart'));
+        const lineOption = {
+            title: { text: 'Service Usage Over Time' },
+            xAxis: { type: 'category', data: ['Jan', 'Feb', 'Mar', 'Apr', 'May'] },
             yAxis: { type: 'value' },
-            series: [{ symbolSize: 20, data: [[0, 90], [1, 80], [2, 70]], type: 'scatter' }]
+            series: [{ data: [10, 22, 28, 35, 40], type: 'line' }]
         };
-        scatterChart.setOption(scatterOption);
+        lineChart.setOption(lineOption);
     </script>
 </body>
 </html>

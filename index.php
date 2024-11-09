@@ -25,9 +25,9 @@
     const barChart = echarts.init(document.getElementById('barChart'));
     const barOption = {
         title: { text: 'Monthly Coffee Sales' },
-        xAxis: { data: ['Espresso', 'Latte', 'Cappuccino', 'Mocha', 'Americano'] },
+        xAxis: { data: ['Espresso', 'Latte', 'Cappuccino', 'Mocha', 'Americano', 'Vietnamese Cafe Sua Da'] },
         yAxis: {},
-        series: [{ type: 'bar', data: [50, 120, 90, 80, 110] }]
+        series: [{ type: 'bar', data: [50, 120, 90, 80, 110,125] }]
     };
     barChart.setOption(barOption);
 </script>

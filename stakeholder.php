@@ -12,7 +12,7 @@
         <a href="about.php">About Us</a> |
         <a href="services.php">Services</a> |
         <a href="contact.php">Contact</a> |
-        <a href="stakeholder.php">Stakeholders</a>
+        <a href="stakeholders.php">Stakeholders</a>
     </nav>
 
     <!-- Main Content -->
